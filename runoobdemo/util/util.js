@@ -20,6 +20,8 @@ objBase.showName();
 objBase.sayHello();
 var objSub = new Sub();
 objSub.showName();
+// Sub 仅仅继承了Base 在原型中定义的函数，
+// 而构造函数内部创造的 base 属 性和 sayHello 函数都没有被 Sub 继承。
 //objSub.sayHello();
 console.log(objSub);
 
